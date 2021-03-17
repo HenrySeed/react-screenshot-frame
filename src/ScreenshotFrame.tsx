@@ -10,6 +10,7 @@ const frameStyles = [
             minHeight: "200px",
             backgroundColor: "#191919",
             boxShadow: "5px 5px 20px 0px rgba(0,0,0,0.2)",
+            color: "#FFFFFF",
         },
         header: (
             <div

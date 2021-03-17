@@ -1,7 +1,7 @@
 {
-    "name": "react-screenshot-frame",
+    "name": "react-window-frame",
     "version": "1.0.0",
-    "description": "Easily frame screenshots with custom frames, emulating terminal windows, browsers etc",
+    "description": "Easily frame screenshots, text etc with custom frames, emulating terminal windows, browsers etc",
     "main": "./dist/src/index.js",
     "types": "./dist/src/index.d.ts",
     "repository": "https://github.com/HenrySeed/react-screenshot-frame.git",
@@ -22,6 +22,6 @@
         "reset": "rm -rf node_modules && rm -rf build && yarn install && yarn tsc",
         "compile": "yarn tsc && yarn copy-css",
         "copy-css": "copyfiles -u 1 src/**/*.css dist/src",
-        "publish:gh": "yarn compile && npm --userconfig ../../.npmrc publish"
+        "prepublishOnly": "yarn compile"
     }
 }

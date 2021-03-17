@@ -4,28 +4,29 @@ import { ScreenshotFrame } from "react-screenshot-frame";
 
 function App() {
     const panelStyle: React.CSSProperties = {
-        marginBottom: "40px",
-        marginLeft: "auto",
-        marginRight: "auto",
-        display: "block",
+        margin: "20px ",
+        display: "inline-block",
+        width: "400px",
     };
 
     return (
         <div className="App">
             <div
                 style={{
+                    width: "890px",
                     marginLeft: "auto",
                     marginRight: "auto",
-                    width: "fit-content",
                     marginTop: "10vh",
                 }}
             >
                 <ScreenshotFrame
                     variant="macOS-dark"
-                    windowPadding="0px 10px"
+                    windowPadding="0px 15px"
                     style={panelStyle}
                 >
-                    <img src="./pic_2.png" alt="bite-me" width="650px" />
+                    <span style={{ fontFamily: "monospace" }}>
+                        It has Dark Mode!
+                    </span>
                 </ScreenshotFrame>
 
                 <ScreenshotFrame
@@ -34,27 +35,27 @@ function App() {
                     windowPadding="10px"
                 >
                     <span style={{ fontFamily: "sans-serif" }}>
-                        This has a shadow
+                        It can have shadows
                     </span>
                 </ScreenshotFrame>
                 <ScreenshotFrame
-                    style={{ ...panelStyle, width: "400px" }}
+                    style={panelStyle}
                     variant="macOS-light"
                     windowPadding="10px"
                     shadow={false}
                 >
                     <span style={{ fontFamily: "sans-serif" }}>
-                        This has no shadow
+                        Or no shadows
                     </span>
                 </ScreenshotFrame>
 
                 <ScreenshotFrame
-                    style={{ ...panelStyle, width: "400px" }}
+                    style={panelStyle}
                     variant="macOS-classic"
                     windowPadding="10px"
                 >
                     <span style={{ fontFamily: "sans-serif" }}>
-                        This is a test
+                        It can even do mac classic
                     </span>
                 </ScreenshotFrame>
             </div>
