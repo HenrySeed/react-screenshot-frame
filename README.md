@@ -2,16 +2,24 @@
 
 easily frame screenshots with custom frames, emulating terminal windows, browsers etc
 
-![Demo](https://i.imgur.com/lTLo4BY.png)
+![Demo](https://i.imgur.com/J7wNfCd.png)
 
 ## Usage
 
 ```javascript
 import { ScreenshotFrame } from "react-screenshot-frame";
 
-<ScreenshotFrame variant="macOS-dark" windowPadding="10px" shadow={false}>
-    <span>It has Dark Mode!</span>
-</ScreenshotFrame>;
+function example() {
+    return (
+        <ScreenshotFrame
+            variant="macOS-dark"
+            windowPadding="10px"
+            shadow={false}
+        >
+            <span>It has Dark Mode!</span>
+        </ScreenshotFrame>
+    );
+}
 ```
 
 ## Props
@@ -29,3 +37,7 @@ import { ScreenshotFrame } from "react-screenshot-frame";
 -   macOS-dark
 -   macOS-light
 -   macOS-classic
+-   windows-10-dark
+-   windows-10-light
+-   windows-98
+-   windows-XP

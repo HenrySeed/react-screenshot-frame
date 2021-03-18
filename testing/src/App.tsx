@@ -7,6 +7,7 @@ function App() {
         margin: "20px ",
         display: "inline-block",
         width: "400px",
+        verticalAlign: "top",
     };
 
     return (
@@ -17,6 +18,7 @@ function App() {
                     marginLeft: "auto",
                     marginRight: "auto",
                     marginTop: "10vh",
+                    marginBottom: "10vh",
                 }}
             >
                 <ScreenshotFrame
@@ -56,6 +58,42 @@ function App() {
                 >
                     <span style={{ fontFamily: "sans-serif" }}>
                         It can even do mac classic
+                    </span>
+                </ScreenshotFrame>
+                <ScreenshotFrame
+                    style={panelStyle}
+                    variant="windows-10-light"
+                    windowPadding="10px"
+                >
+                    <span style={{ fontFamily: "sans-serif", padding: "12px" }}>
+                        It can be Windows 10
+                    </span>
+                </ScreenshotFrame>
+                <ScreenshotFrame
+                    style={panelStyle}
+                    variant="windows-10-dark"
+                    windowPadding="10px"
+                >
+                    <span style={{ fontFamily: "sans-serif", padding: "12px" }}>
+                        Even windows 10 dark mode
+                    </span>
+                </ScreenshotFrame>
+                <ScreenshotFrame
+                    style={panelStyle}
+                    variant="windows-98"
+                    windowPadding="10px"
+                >
+                    <span style={{ fontFamily: "sans-serif", padding: "12px" }}>
+                        It has some of that good good 98 energy
+                    </span>
+                </ScreenshotFrame>
+                <ScreenshotFrame
+                    style={panelStyle}
+                    variant="windows-XP"
+                    windowPadding="20px"
+                >
+                    <span style={{ fontFamily: "sans-serif", padding: "12px" }}>
+                        But can it play Crisis?
                     </span>
                 </ScreenshotFrame>
             </div>
